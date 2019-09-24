@@ -20,7 +20,7 @@ public class Program
       Console.WriteLine("I won! Your number is: " + halfwayNum);
       Console.WriteLine("Play Again? (Enter Y/N)");
       string newGame = Console.ReadLine();
-      if (newGame.ToUpper() == "Y")
+      if (newGame.ToUpper() == "Y" || newGame.ToUpper() == "YES")
       {
         Main();
       }
@@ -31,7 +31,7 @@ public class Program
     }
     else
     {
-      Console.WriteLine("Is your number higher, or lower? (Enter H/L)");
+      Console.WriteLine("Is your number higher or lower? (Enter H/L)");
       string response = Console.ReadLine();
       if (response.ToUpper() == "H" || response.ToUpper() == "HIGHER")
       {
