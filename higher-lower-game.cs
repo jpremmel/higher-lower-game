@@ -8,7 +8,7 @@ public class Program
     int max = 100;
     GuessMiddleNumber(min, max);
   }
-  static int GuessMiddleNumber(int min, int max)
+  static void GuessMiddleNumber(int min, int max)
   // GuessMiddleNumber is a method for calculating the users number. We added the branching statements here because we need to repeat this series of questions until the user answers yes
   {
     int halfwayNum = ((max - min)/2)+ min;
@@ -44,6 +44,5 @@ public class Program
         GuessMiddleNumber(min, max);
       }
     }
-    return halfwayNum;
   }
 }
